@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <meta name="viewport" content="with=device-width, initial-scale=1.0">
+         <title>PortfolioWebsite</title>
+         <link rel="stylesheet" href="mystyle.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+     </head>
+     <body>
+       <section class="header">
+        <nav>
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <div class="nav-links" id="navLinks">
+                 <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="voorstellen.html">VOORSTELLEN</a></li>
+                    <li><a href="ervaringen.html">ERVARINGEN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                 </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+         <h1> MAROUANE DE SOFTWARE DEVELOPER </h1>
+            <P>Wat is een software developer precies.</P>
+            <a href="voorstellen.html" class="hero-btn">Klik als je meer wilt weten.</a>
+        </div>
+       </section>
+
+       <!------JavaScript for Toggle Menu-------->
+     <script>
+         var navLinks = document.getElementById("navLinks");
+
+         function showMenu() {
+             navLinks.style.right = "0";
+         }
+         function hideMenu() {
+             navLinks.style.right = "-200px";
+         }
+
+     </script>
+  </body>
+</html>
